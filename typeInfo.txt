@@ -1,0 +1,18 @@
+Riya is writing this file 
+
+fsdfsdf
+sdfdsf
+sdfdsf
+sdfdsf
+
+
+awdwqd
+wdwq
+wwqewqe
+
+adasd
+asdasd
+asdasd
+asdasd
+asdasdsad this is working good, 
+my file is now appending if it exists 
