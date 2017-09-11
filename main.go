@@ -9,7 +9,7 @@ import (
 const fileName = "typeInfo.txt"
 
 func main() {
-	file, size := createFile()
+	file, size := openExistingFile()
 	defer file.Close()
 	if size > 0 {
 		writeToFile(file, os.Stdin)
@@ -26,7 +26,7 @@ func main() {
 		writeToFile(*newFile, os.Stdin)
 	}
 }
-func createFile() (os.File, int64) {
+func openExistingFile() (os.File, int64) {
 	fmt.Println("Please type in the terminal  \xF0\x9F\x98\x83 \n")
 	fileName := fileName
 	file, err := os.OpenFile(fileName, os.O_APPEND|os.O_WRONLY, 0600)
