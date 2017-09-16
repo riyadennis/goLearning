@@ -15,6 +15,8 @@ func main() {
 	select {
 	case res := <-c1:
 		fmt.Println(res)
+	//this is the place where we implement time out after 2 s
+	// seconds we print the string and stops the execution
 	case <-time.After(time.Second * 2):
 		fmt.Println("timeout 1")
 	}

@@ -5,6 +5,11 @@ import (
 	"time"
 )
 
+//done with a channel that can hold a bool
+// once all the processing is done pass a true value into that channel
+// recieve from that channel in the main function, once we recieve anything into that channel
+//execution terminates
+
 func printInLoop(count int, done chan bool) {
 	fmt.Println("Working")
 	time.Sleep(time.Second)

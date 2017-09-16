@@ -1,7 +1,8 @@
 package main
 
 import "fmt"
-
+//once all the processing is done and information is put to the channel we can close it
+// still we cab iterate through the channel in the reciever even if the channel is closed
 func main() {
 	jobs := make(chan string, 5)
 	done := make(chan bool, 1)
